@@ -1,11 +1,11 @@
 {
-  "name": "conFusion",
+  "name": "jsconFusion",
   "version": "1.0.0",
   "description": "Website for an awesome restaurant",
   "main": "index.html",
   "moduleType": [],
   "keywords": [
-    "conFusion",
+    "jsconFusion",
     "Fusion",
     "Restaurant"
   ],
