@@ -8,7 +8,7 @@ angular.module('confusionApp')
             $scope.filtText = '';
             $scope.showDetails = false;
 
-           $scope.dishes = menuFactory.getDishes();
+           	$scope.dishes = menuFactory.getDishes();
                         
             $scope.select = function(setTab) {
                 $scope.tab = setTab;
@@ -67,9 +67,9 @@ angular.module('confusionApp')
             };
         }])
 
-        .controller('DishDetailController', ['$scope','$routeParams', 'menuFactory', function($scope,$routeParams, menuFactory) {
+        .controller('DishDetailController', ['$scope','$stateParams', 'menuFactory', function($scope,$stateParams, menuFactory) {
 
-            var dish = menuFactory.getDish(parseInt($routeParams.id,10));
+            var dish = menuFactory.getDish(parseInt($stateParams.id,10));
             
             $scope.dish = dish;
             $scope.dishcomment = {author:"", comment:"", date:"",rating:5,date: new Date().toISOString()};
